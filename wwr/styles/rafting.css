@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #EE447A;
-    --secondary-color: #2041fe;
+    --secondary-color: #444449;
     --accent-color: #F5F4F6;
     --additional-accent-color: #0b120b;
     --heading-font: 'Space Mono', monospace;
@@ -10,10 +10,10 @@
     --nav-bg-color: #EE447A;
     --nav-link-color: #F5F4F6;
     --nav-hover-link-color: #FE8420;
-    --nav-hover-bg-color: #606D5F;
+    --nav-hover-bg-color: #847e7e;
   }
 body {
-    min-width: 900px;
+    min-width: 950px;
 }
 
   h1, h2, h3, h4, h5, h6 {
@@ -23,8 +23,49 @@ body {
     margin: 20px 0;
   }
 
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    border-bottom: 3px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    margin-bottom: 2rem;
+  }
+
+  header .logo {
+    margin: 20px 50px;
+  }
+
+header nav {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-around;
+}
+
+  header nav a {
+    margin: 10px;
+    border: 1px solid var(--primary-color);
+    padding: 8px 10px;
+    text-decoration: none;
+    color: var(--nav-link-color);
+    border-radius: 3px;
+    font-size: 1.5rem;
+  }
+
+  header nav a:hover {
+    background-color: var(--nav-hover-bg-color);
+    transition: 0.15s;
+  }
+
+  header nav a:active {
+    background-color: var(--primary-color);
+    
+  }
+
   .logo {
-    width: 150px;
+    width: 100px;
+    border-radius: 20%;
+    border: 3px solid var(--primary-color);
   }
   
   /* Add styles for paragraphs */
@@ -79,4 +120,57 @@ body {
     height: auto;
     max-height: 150px;
     margin-left: auto;
+}
+
+.history-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+  border: 1px solid var(--primary-color);
+}
+
+.history-p-container {
+  display: flex;
+  margin: 1rem;
+}
+
+.history-img {
+  width: 300px;
+  object-fit: contain;
+
+}
+.column-container {
+  width: 50%;
+  margin: 1rem;
+}
+
+.adventure-section {
+  border: 1px solid var(--primary-color);
+}
+
+.adventure-photos {
+  display: flex;
+}
+.adventure-photos figure {
+  margin: 10px;
+}
+.adventure-photos img {
+  width: 100%;
+  object-fit: contain;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: solid 1px #444449;
+  margin-top: 1rem;
+}
+footer p {
+  margin-left: auto;
+}
+footer div {
+  margin-left: auto;
 }
