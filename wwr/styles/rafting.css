@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-
-:root {
+  :root {
     --primary-color: #EE447A;
     --secondary-color: #444449;
     --accent-color: #F5F4F6;
@@ -12,9 +10,10 @@
     --nav-hover-link-color: #FE8420;
     --nav-hover-bg-color: #847e7e;
   }
-body {
+
+  body {
     min-width: 950px;
-}
+  }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
@@ -36,11 +35,11 @@ body {
     margin: 20px 50px;
   }
 
-header nav {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  justify-content: space-around;
-}
+  header nav {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-around;
+  }
 
   header nav a {
     margin: 10px;
@@ -59,7 +58,6 @@ header nav {
 
   header nav a:active {
     background-color: var(--primary-color);
-    
   }
 
   .logo {
@@ -67,7 +65,7 @@ header nav {
     border-radius: 20%;
     border: 3px solid var(--primary-color);
   }
-  
+
   /* Add styles for paragraphs */
   p {
     font-family: var(--paragraph-font);
@@ -76,101 +74,227 @@ header nav {
     margin-bottom: 20px;
   }
 
-.hero {
+  .hero {
     position: relative;
-}
-.hero-title {
+  }
+
+  .hero-title {
     background-color: rgba(30, 31, 33, 0.8);
     width: 100%;
     display: block;
     font-weight: bold;
-}
+  }
 
-.hero-image {
+  .hero-image {
     position: relative;
     display: block;
     width: 100%;
     height: auto;
-}
+  }
 
-.position-absolute {
+  .position-absolute {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
     top: 0px;
     width: 100%;
-}
+  }
 
-.happy-client-container {
+  .happy-client-container {
     display: flex;
     width: 80%;
     background-color: rgba(185, 192, 189, 0.7);
     max-height: 150px;
-}
+  }
 
-.motto {
+  .motto {
     padding: 0px 10px;
     font-size: 25px;
     font-weight: bold;
-}
+  }
 
-.happy-client {
+  .happy-client {
     float: right;
     height: auto;
     max-height: 150px;
     margin-left: auto;
-}
+  }
 
-.history-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin: 1rem;
-  border: 1px solid var(--primary-color);
-}
+  .history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    border: 1px solid var(--primary-color);
+  }
 
-.history-p-container {
-  display: flex;
-  margin: 1rem;
-}
+  .history-p-container {
+    display: flex;
+    margin: 1rem;
+  }
 
-.history-img {
-  width: 300px;
-  object-fit: contain;
+  .history-img {
+    width: 300px;
+    object-fit: contain;
+  }
 
-}
-.column-container {
-  width: 50%;
-  margin: 1rem;
-}
+  .column-container {
+    width: 50%;
+    margin: 1rem;
+  }
 
-.adventure-section {
-  border: 1px solid var(--primary-color);
-}
+  .adventure-section {
+    border: 1px solid var(--primary-color);
+  }
 
-.adventure-photos {
-  display: flex;
-}
-.adventure-photos figure {
-  margin: 10px;
-}
-.adventure-photos img {
-  width: 100%;
-  object-fit: contain;
-}
+  .adventure-photos {
+    display: flex;
+  }
 
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: solid 1px #444449;
-  margin-top: 1rem;
-}
-footer p {
-  margin-left: auto;
-}
-footer div {
-  margin-left: auto;
-}
+  .adventure-photos figure {
+    margin: 10px;
+  }
+
+  .adventure-photos img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px #444449;
+    margin-top: 1rem;
+  }
+
+  footer p {
+    margin-left: auto;
+  }
+
+  footer div {
+    margin-left: auto;
+  }
+
+  address {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 10px;
+    border: solid 1px var(--primary-color);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  address p {
+    margin: 5px;
+  }
+  
+  .contact-main {
+    display: flex;
+    justify-content: space-around;
+  }
+
+.employees-container {
+      text-align: center;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    .employees-container h2 {
+      color: #333;
+    }
+
+    /* Styles for employee profiles */
+    .employee-profiles {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    /* Styles for individual employee profiles */
+    .employee {
+      width: 300px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .employee img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .employee h3 {
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .employee p {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .input-form {
+      max-width: 400px;
+      margin: 20px auto;
+      text-align: center;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      border: solid 1px var(--primary-color);
+    }
+
+    .input-form label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .input-form input[type="text"],
+    .input-form input[type="email"],
+    .input-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .input-form p {
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .input-form input[type="radio"],
+    .input-form input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .input-form input[type="submit"] {
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .input-form input[type="submit"]:hover {
+      background-color: var(--primary-color);
+    }
+
+    
