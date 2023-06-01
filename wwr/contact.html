@@ -11,21 +11,36 @@
       src="https://kit.fontawesome.com/2c0a271c60.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles/rafting.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
   </head>
   <body>
     <header>
-      <img class="logo" src="images/logo.jpeg" alt="The logo" />
       <nav>
-        <a href="site-plan-rafting.html">Rafting Home Page</a>
-        <a href="about.html">About</a>
-        <a href="#">Trips</a>
-        <a href="#">Contact Us</a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img class="logo" src="images/logo2.png" alt="The logo" />
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="trips.html">Trips</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main >
       <section class="contact-main">
-                <address>
+                <form class="contact-form">
                   <h1>CONTACT US:</h1>
             <p style="font-weight: bold">Stephanie Bronson</p>
             <p style="text-decoration: underline">Rapid Bonds</p>
@@ -40,7 +55,7 @@
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe> 
-        </address>
+        </form>
 
       </section>
 

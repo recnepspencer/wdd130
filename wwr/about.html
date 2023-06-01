@@ -12,22 +12,38 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles/rafting.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+
   </head>
   <body>
     <header>
-      <img class="logo" src="images/logo.jpeg" alt="The logo" />
       <nav>
-        <a href="site-plan-rafting.html">Rafting Home Page</a>
-        <a href="about.html">About</a>
-        <a href="#">Trips</a>
-        <a href="#">About</a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img class="logo" src="images/logo2.png" alt="The logo" />
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="trips.html">Trips</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
       <div class="hero">
         <img src="images/hero.jpg" alt="Hero rafting pic" class="hero-image" />
         <div class="position-absolute">
-          <h1 class="hero-title">Rapid Bonding Whitewater Rafting</h1>
+          <h1 class="hero-title">Rapid Bonds Whitewater Rafting</h1>
           <article class="happy-client-container">
             <p class="motto">
               Rapidly bonding, where adventure and family flow together!
@@ -44,7 +60,13 @@
           <div class="history-container">
             <h2>History</h2>
             <div class="history-p-container">
-              <div class="column-container">
+
+              <div class="history-image">              <img
+                src="images/history.jpg"
+                alt="History Photo"
+              /></div>
+
+              <div class="left">
                 <p>
                   In the early days of 1995, our founders, Rowan Swift and
                   Kayleigh Current, found themselves caught in the eddy of their
@@ -64,12 +86,8 @@
                 </p>
               </div>
 
-              <img
-                class="history-img"
-                src="images/history.png"
-                alt="History Photo"
-              />
-              <div class="column-container">
+
+              <div class="right">
                               <p>
                 Over the years, the company has continued to flourish, providing
                 unforgettable river escapades for thousands of families. By
